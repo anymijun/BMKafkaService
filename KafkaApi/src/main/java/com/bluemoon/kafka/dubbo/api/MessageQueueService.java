@@ -1,5 +1,8 @@
 package com.bluemoon.kafka.dubbo.api;
 
+import com.bluemoon.kafka.dubbo.dto.AbstractMessageObject;
+
+import java.io.IOException;
 import java.util.concurrent.Future;
 
 /**
@@ -17,11 +20,11 @@ public interface MessageQueueService {
     Future sendMessage(String topic, String data);
 
     /**
-     * 发送二进制序列化后的消息
+     * 发送对象
      *
      * @param topic
      * @param data
      * @return
      */
-    Future sendMessage(String topic, byte[] data);
+    Future sendMessage(String topic, AbstractMessageObject data) throws IOException;
 }
