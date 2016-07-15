@@ -8,5 +8,11 @@
     <artifactId>BMKafkaService</artifactId>
     <version>1.0</version>
 
+    <modules>
+        <!-- 暴露出去的API及DTO -->
+        <module>KafkaApi</module>
+        <!-- 具体的服务实现 -->
+        <module>KafkaService</module>
+    </modules>
 
 </project>
