@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {
+      "name": "kafka.batchsize",
+      "type": "java.lang.Integer",
+      "description": "Description for kafka.batchsize."
+    },
+    {
+      "name": "kafka.buffermemory",
+      "type": "java.lang.Integer",
+      "description": "Description for kafka.buffermemory."
+    },
+    {
+      "name": "kafka.retries",
+      "type": "java.lang.Integer",
+      "description": "Description for kafka.retries."
+    }
+  ]
+}
