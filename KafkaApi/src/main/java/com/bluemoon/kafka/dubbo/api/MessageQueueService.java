@@ -17,7 +17,7 @@ public interface MessageQueueService {
      * @param data
      * @return
      */
-    Future sendMessage(String topic, String data);
+    void sendMessage(String topic, String data);
 
     /**
      * 发送对象
@@ -26,5 +26,5 @@ public interface MessageQueueService {
      * @param data
      * @return
      */
-    Future sendMessage(String topic, AbstractMessageObject data) throws IOException;
+    void sendMessage(String topic, AbstractMessageObject data) throws IOException;
 }

@@ -16,9 +16,7 @@
 
     <dubbo:annotation package="com.bluemoon.kafka.dubbo"/>
 
-    <!-- 以下port是netty使用的端口，同一台机部署多个dubbo服务时，netty要用不同端口
-            yshop使用默认的20880，ypay使用20881，yshopv2使用20882
-    -->
+    <!-- 以下port是netty使用的端口，同一台机部署多个dubbo服务时，netty要用不同端口-->
     <dubbo:protocol name="dubbo" serialization="dubbo" port="20882"/>
 
 </beans>

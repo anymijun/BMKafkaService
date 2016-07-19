@@ -20,12 +20,12 @@ public class MessageQueueServiceImpl implements MessageQueueService {
     KafkaService kafkaService;
 
     @Override
-    public Future sendMessage(String topic, String data) {
-        return kafkaService.sendMessage(topic, data);
+    public void sendMessage(String topic, String data) {
+        kafkaService.sendMessage(topic, data);
     }
 
     @Override
-    public Future sendMessage(String topic, AbstractMessageObject data) throws IOException {
-        return kafkaService.sendMessage(topic, SerializeUtil.serialize(data));
+    public void sendMessage(String topic, AbstractMessageObject data) throws IOException {
+        kafkaService.sendMessage(topic, SerializeUtil.serialize(data));
     }
 }

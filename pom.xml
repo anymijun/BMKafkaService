@@ -12,8 +12,12 @@
     <modules>
         <!-- 暴露出去的API及DTO -->
         <module>KafkaApi</module>
-        <!-- 具体的服务实现 -->
+        <!-- Kafka服务提供者 -->
         <module>KafkaService</module>
+        <!-- Kafka消息服务的消费者 （涉及具体业务）-->
+        <module>KafkaConsumer</module>
+        <!-- Kafka消息发送服务的调用者 （涉及具体业务）-->
+        <module>KafkaProducer</module>
     </modules>
 
 </project>
