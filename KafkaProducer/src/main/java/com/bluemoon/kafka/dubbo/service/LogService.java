@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
  * Created by LeonWong on 16/7/19.
  */
 @Service
-public class BusinessService {
+public class LogService {
 
     @Reference(version = "0.1")
     public MessageQueueService messageQueueService;

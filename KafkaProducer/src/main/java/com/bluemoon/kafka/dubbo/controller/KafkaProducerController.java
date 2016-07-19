@@ -1,6 +1,6 @@
 package com.bluemoon.kafka.dubbo.controller;
 
-import com.bluemoon.kafka.dubbo.service.BusinessService;
+import com.bluemoon.kafka.dubbo.service.LogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
@@ -15,12 +15,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class KafkaProducerController {
 
     @Autowired
-    BusinessService businessService;
+    LogService logService;
 
     @RequestMapping("/sendDubboMessage")
     @ResponseBody
     public String index() {
-        businessService.doSendMessage("这是内容");
+        logService.doSendMessage("日志记录内容");
         return "hello world";
     }
 }
