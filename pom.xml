@@ -10,14 +10,16 @@
     <packaging>pom</packaging>
 
     <modules>
-        <!-- 暴露出去的API及DTO -->
+        <!-- 暴露出去的Kafka API -->
         <module>KafkaApi</module>
-        <!-- Kafka服务提供者 -->
+        <!-- Kafka服务系统 -->
         <module>KafkaService</module>
-        <!-- Kafka消息服务的消费者 （涉及具体业务）-->
-        <module>KafkaConsumer</module>
-        <!-- Kafka消息发送服务的调用者 （涉及具体业务）-->
+        <!-- 日志系统 -->
+        <module>BMLogSystem</module>
+        <!-- 业务系统,日志锚点 -->
         <module>KafkaProducer</module>
+        <!-- 暴露出去的统一日志 API -->
+        <module>LogSysApi</module>
     </modules>
 
 </project>
