@@ -1,7 +1,7 @@
 package com.bluemoon.log.es.service;
 
 import com.bluemoon.log.domain.LogVo;
-import com.bluemoon.log.es.repository.LogIndexRepository;
+import com.bluemoon.log.es.repositories.LogIndexRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +16,7 @@ public class EsService {
 
     /**
      * 测试插入记录
-     * 
+     *
      * @param logVo
      */
     public void doInsert(LogVo logVo) {

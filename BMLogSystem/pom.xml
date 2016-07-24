@@ -17,7 +17,9 @@
     <properties>
         <java.version>1.7</java.version>
         <main.basedir>${basedir}/../..</main.basedir>
-        <fastjson_version>1.1.39</fastjson_version>
+        <fastjson.version>1.1.39</fastjson.version>
+        <elastic.version>2.2.0</elastic.version>
+        <spring.data.elastic.version>2.0.2.RELEASE</spring.data.elastic.version>
     </properties>
 
     <dependencies>
@@ -56,21 +58,25 @@
             <artifactId>KafkaApi</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>com.bluemoon.kafka</groupId>
-            <artifactId>LogSysApi</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
         <!-- elastic search 相关jar包-->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
-            <version>${spring-boot.version}</version>
+            <groupId>com.bluemoon</groupId>
+            <artifactId>LogSysApi</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>${fastjson_version}</version>
+            <version>${fastjson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+            <version>1.3.6.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
     </dependencies>
     <build>

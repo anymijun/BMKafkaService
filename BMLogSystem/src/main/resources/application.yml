@@ -4,4 +4,12 @@ spring:
   data:
     elasticsearch:
       cluster-nodes: 127.0.0.1:9300
-      cluster-name: elasticsearch
+      cluster-name: elasticsearch_zealer
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/yshop_v2?useUnicode=true&characterEncoding=UTF-8
+    password: 123456
+    username: root
+    driverClassName: com.mysql.jdbc.Driver

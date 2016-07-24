@@ -1,5 +1,7 @@
 package com.bluemoon.log.domain;
 
+import org.springframework.data.elasticsearch.annotations.Document;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -8,8 +10,10 @@ import java.util.Date;
  *
  * Created by LeonWong on 16/7/19.
  */
+@Document(indexName = "log_index")
 public class LogVo implements Serializable {
 
+    private String id;
     private String content;
     private Date crtime;
     private String who;
@@ -56,4 +60,11 @@ public class LogVo implements Serializable {
         this.remark = remark;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 }
