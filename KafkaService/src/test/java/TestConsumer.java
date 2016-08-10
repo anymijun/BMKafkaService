@@ -12,7 +12,7 @@ public class TestConsumer {
 
     public static void main(String args[]) {
         Properties props = new Properties();
-        props.put("bootstrap.servers", "localhost:9092");
+        props.put("bootstrap.servers", "192.168.240.8:9092");
         props.put("group.id", "CONSUMER_GROUP");
         props.put("enable.auto.commit", "true");
         props.put("auto.commit.interval.ms", "1000");

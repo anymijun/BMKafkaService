@@ -27,4 +27,23 @@ public interface MessageQueueService {
      * @return
      */
     void sendMessage(String topic, AbstractMessageObject data) throws IOException;
-}
+
+    /**
+     * 启动接收消息
+     * @return
+     */
+    void onStart();
+
+    /**
+     * 停止接收
+     * @throws Exception
+     */
+    void onStop() throws Exception;
+
+    /**
+     * 开始接收消息
+     * @return
+     */
+    String getMessage();
+
+     }

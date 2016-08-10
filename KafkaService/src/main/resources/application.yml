@@ -3,16 +3,24 @@ server:
 
 kafka:
   clusters:
-    - 127.0.0.1:9092
+    - 192.168.240.8:9092
   batchsize: 16384
   buffermemory: 33554432
   retries: 0
 
+  consumer.bootstrap.servers:
+      - 192.168.240.15:2181
+  groupId: test1
+
+topic: consumer-tutorial
+
+
+
 spring.dubbo:
   application:
-    name: provider-test
+    name: kafka-service-dubbo
   registry:
-    address: zookeeper://127.0.0.1:2181
+    address: zookeeper://192.168.240.15:2181
   protocol:
     name: dubbo
     port: 20880
