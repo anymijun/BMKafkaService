@@ -18,8 +18,6 @@
         <java.version>1.7</java.version>
         <main.basedir>${basedir}/../..</main.basedir>
         <fastjson.version>1.1.39</fastjson.version>
-        <elastic.version>2.2.0</elastic.version>
-        <spring.data.elastic.version>2.0.2.RELEASE</spring.data.elastic.version>
     </properties>
 
     <dependencies>
@@ -72,7 +70,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
-            <version>1.3.6.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>

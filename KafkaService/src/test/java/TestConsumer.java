@@ -23,9 +23,11 @@ public class TestConsumer {
         consumer.subscribe(Arrays.asList("consumer-tutorial", "bar"));
         while (true) {
             ConsumerRecords<String, String> records = consumer.poll(100);
-            for (ConsumerRecord<String, String> record : records)
+            for (ConsumerRecord<String, String> record : records) {
+                System.out.println("partition = " + record.partition());
                 System.out.printf("offset = %d, key = %s, value = %s \n", record.offset(), record.key(),
                         record.value());
+            }
         }
 
     }

@@ -9,8 +9,11 @@ import com.bluemoon.kafka.service.KafkaService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.IOException;
+<<<<<<< HEAD
 import java.util.Map;
 import java.util.concurrent.Future;
+=======
+>>>>>>> d4ddba9d5db13537a60dec1b626acf3aeb474578
 
 /**
  * Created by LeonWong on 16/7/15.
