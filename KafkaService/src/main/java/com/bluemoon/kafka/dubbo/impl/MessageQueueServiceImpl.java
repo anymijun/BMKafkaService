@@ -8,7 +8,6 @@ import com.bluemoon.kafka.service.KafkaService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.IOException;
-import java.util.concurrent.Future;
 
 /**
  * Created by LeonWong on 16/7/15.
