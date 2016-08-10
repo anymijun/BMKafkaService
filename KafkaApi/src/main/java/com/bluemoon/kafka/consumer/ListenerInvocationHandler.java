@@ -7,6 +7,8 @@ import java.lang.reflect.Proxy;
 /**
  * 动态代理类
  *
+ * 之所以这里考虑动态代理,目的是为了以后消费端做监控考虑
+ *
  * Created by LeonWong on 16/8/9.
  */
 public class ListenerInvocationHandler implements InvocationHandler {

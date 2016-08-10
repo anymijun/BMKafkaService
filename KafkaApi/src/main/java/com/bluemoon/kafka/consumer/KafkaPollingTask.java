@@ -44,6 +44,7 @@ public class KafkaPollingTask implements Runnable {
         while (true) {
             ConsumerRecords<String, String> records = consumer.poll(100);
             for (ConsumerRecord<String, String> record : records) {
+                System.out.println("record.value()-------------------"+record.value());
                 listener.onMessageReceive(record.value());
             }
             try {
