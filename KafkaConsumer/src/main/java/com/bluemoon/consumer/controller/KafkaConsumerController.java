@@ -2,9 +2,6 @@ package com.bluemoon.consumer.controller;
 
 
 import com.bluemoon.consumer.bean.KafkaMessageConsumer;
-import com.bluemoon.consumer.bean.Subscribe;
-import com.bluemoon.consumer.websocket.MyWebSocket;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +12,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @Controller
 @EnableAutoConfiguration
-@Subscribe(topic="asdfsdf",groupId = "asdfasdf",partition = "asdfasdf")
 public class KafkaConsumerController {
 
 
